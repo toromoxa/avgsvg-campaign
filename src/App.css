@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-image: url('./assets/glacier2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav__container {
+    width: 100%;
+}
+
+.nav__row {
+    width: auto;
+    padding: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav__logo--wrapper {
+    display: flex;
+    transform: translateX(-30px);
+}
+
+.nav--logo {
+    width: 50px;
+}
+
+.logo__link:hover {
+    transition: all 500ms ease;
+}
+
+.nav__link--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.list__item {
+    list-style-type: none;
+}
+
+.list__item:hover {
+    transform: scale(1.2);
+    transition: all 500ms ease;
+}
+
+.item__link {
+    font-family: "MedievalSharp", cursive;
+    color: darkred;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 36px;    
+}
+
+.item__link:hover {
+    text-decoration: underline overline;
+    transition: all 500ms ease;
+    color: white;
+    background-color: darkred;
+}
+
+.nav__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.click {
+    transition: all 500ms ease;
+}
+
+.click:hover {
+    transform: scale(1.2);
+}
+
+.click:active {
+    transform: scale(0.8);
+}
+
+.savage {
+    font-size: 48px;
+    color: darkred;
+}
+
+/**
+
+Header
+
+**/
+
+.title {
+    color: darkred;
+    font-size: 28px;
+    margin-bottom: 48px;
+}
+
+/**
+
+Main
+
+**/
+
+#landing {
+    /* background-image: url('./assets/night-blizzard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: rgb(36, 35, 35)
+}
+
+
+.landing__container {
+    margin: 0px 24px;
+}
+
+.landing__row {
+    width: 100%;
+    padding: 12px 0px;
+}
+
+.main__title{
+    font-family: "MedievalSharp", cursive;
+    color: lightblue;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(164, 223, 243), darkred);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.toon__tile--container {
+    width: 100%;
+    
+}
+
+.toon__tile--wrapper {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toon__tile {
+    width: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 225px;
+}
+
+.toon__bottlecap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 125px;
+}
+
+.toon__img {
+    min-height: 50px;
+    max-height: 100px;
+    padding: 24px;
+    overflow: visible;
+}
+
+.toon__link {
+    cursor: not-allowed;
+}
+
+.toon__modal--btn {
+    background-color: transparent;
+    border: none;
+}
+
+.toon__modal--btn:hover {
+    color: rgb(164, 223, 243);
+    cursor: pointer;
+}
+
+.toon__moniker {
+    width: 100%;
+    color: darkred;
+    font-size: 24px;
+    text-align: center;
+    font-family: "MedievalSharp", cursive;
+}
+
+.claw:hover {
+    animation: claw-animation 1000ms;
+}
+
+@keyframes claw-animation {
+    0% {transform: scale(0.8);}
+    15% {rotate: 35deg; transform: scale(2.0); border-radius: 9999px; border-top: 8px solid red;}
+    30% {}
+    45% {rotate: -35deg; transform: scale(1.0); }
+    60% {}
+    75% {rotate: -55deg; transform: scale(4.0); border-radius: 9999px; border-bottom: 8px solid red;}
+    90% {}
+    100%{transform: scale(0.8);}
+}
+
+.sword:hover {
+    animation: sword-animation 2000ms ;
+}
+
+@keyframes sword-animation {
+    0% {rotate: 0deg;}
+    15% {rotate: -180deg; transform: scale(1.8); border-radius: 9999px; border-left: 4px solid red;}
+    30% {rotate: 135deg; transform: scale(1.2);}
+    45% {rotate: -180deg; transform: scale(1.0);}
+    60% {rotate: 270deg; transform: scale(1.8); border-radius: 9999px; border-left: 8px solid red;}
+    75% {rotate: 0deg; transform: scale(1.2);}
+    90% {rotate: 180deg; transform: scale(4.0); border-radius: 9999px; border-left: 8px solid red;}
+    100% {}
+}
+
+.hammer:hover {
+    animation: hammer-animation 1500ms;
+}
+
+@keyframes hammer-animation {
+    0% {transform: scale(1.2); border-radius: 9999px;}
+    20% {rotate: -45deg; transform: scale(1.4); border-radius: 9999px; border-left: 4px solid yellow;}
+    30% {rotate: 40deg; transform: scale(1.2); border-left: white;}
+    40% {rotate: -45deg; transform: scale(2.0); border-radius: 9999px; border-left: 6px solid yellow;}
+    50% {rotate: 40deg; transform: scale(1.2); border-left: white;}
+    60% {rotate: -45deg; transform: scale(2.5); border-radius: 9999px; border-left: 6px solid yellow;}
+    70% {rotate: 40deg; transform: scale(1.2); border-left: white;}
+    80% {rotate: -45deg; transform: scale(3.0); border-radius: 9999px; border-left: 8px solid red}
+}
+
+.pepperbox:hover {
+   animation: pepperbox-animation 1500ms;
+}
+
+@keyframes pepperbox-animation {
+    0% {transform: scale(1.6); rotate: -15deg; border-radius: 9999px; border-right: 8px solid yellow;}
+    20% {transform: translateX(-10%); border-right: none;}
+    30% {rotate: 0deg; transform: translateX(0%);}
+    40% {transform: scale(2.0); rotate: -15deg; border-radius: 9999px; border-right: 8px solid orange;}
+    50% {transform: translateX(-10%);  border-right: none;}
+    60% {rotate: 0deg; transform: translateX(0%);}
+    70% {transform: scale(2.5); rotate: -15deg; border-radius: 9999px; border-right: 8px solid red;}
+    80% {transform: translateX(-10%);  border-right: none;}
+    90% {rotate: 0deg; transform: translateX(0%);}
+    100% {rotate: -345deg;}
+    
+}
+
+/* Modal */
+
+.modal {
+    position: absolute;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1100px;
+    height: 75%;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    z-index: -2;
+    visibility: hidden;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+
+.modal--open .modal {
+    visibility: visible;
+    box-shadow: 0 20 80 0 rgba(0, 0, 0, .55);
+    z-index: 60;
+}
+
+.modal--open .modal__about,
+.modal--open .modal__img {
+    transform: translateX(0%);
+}
+
+.modal__half {
+    width: 50%;
+    transition: all 300ms ease-in;
+}
+
+.modal__info {
+    background-color: lightslategray;
+}
+
+.modal__img {
+    overflow: hidden;
+    transform: translateX(110%);
+}
+
+.modal__about {
+    background-color: lightgrey;
+    position: relative;
+    transform: translateX(-110%);
+}
+
+.character__info {
+    padding: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+.character__name {
+    font-family: "MedievalSharp", cursive;
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    background: radial-gradient(circle, rgb(13, 51, 138), rgb(86, 173, 228));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.known__as {
+    margin: 0 auto;
+    font-family: "MedievalSharp", cursive;
+}
+
+.character__race {
+    margin: 8px;
+    font-family: "MedievalSharp", cursive;
+}
+
+.character__class {
+    margin: 8px;
+    font-family: "MedievalSharp", cursive;
+}
+
+.character__para {
+    line-height: 2.0;
+    font-style: italic;
+}
+
+.about--btn {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-family: "MedievalSharp", cursive;
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    font-weight: 700;
+    color: darkred;
+}
+
+.character__img {
+    height: 100%;
+    transform: translate3d(-200px, -20px, 0);
+}
+
+/* 
+
+Journal 
+
+*/
+
+#Journal {
+    background-color: bisque;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.journal__title {
+    font-family: "MedievalSharp", cursive;
+    color: darkgreen;
+    font-size: 40px;
+    text-align: center;
+}
+
+.row {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.entry__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.entry__container--right {
+    flex-direction: row-reverse;
+}
+
+.wrapper {
+    margin: 2px 2px;
+    padding: 8px 14px;
+}
+
+.journal--img {
+    width: 100%;
+    max-width: 648px;
+    border-radius: 12px;
+    border: 3px solid rgb(150, 52, 10)
+}
+
+.entry__text--background{
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    left: 0px; 
+    top: 0px; 
+    z-index: 0;
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+.entry__text {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 88px 54px 64px 54px;
+    text-align: center;
+    color: rgb(150, 52, 10);
+    font-family: "Playwrite AU TAS", cursive;
+}
+
+.entry--title {
+    text-align:  right;
+    font-size: 20px;
+}
+
+.entry--subtitle {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.entry--para {
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+/**
+
+Footer
+
+**/
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-image: url('./assets/northern-light-tundra.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer__container {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
+
+.footer__row{
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__link--list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 24px;
+    padding: 0px;
+
+}
+
+.footer--links {
+    font-size: 20px;
+}
+
+.footer--link {
+    color: rgb(90, 131, 74);
+}
+
+.footer--link:hover {
+    background-color: rgb(90, 131, 74);
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+}
+
+/* responsive changes */
+
+@media (max-width: 550px) {
+    .secondary {
+        display: none;
+    }
+}
