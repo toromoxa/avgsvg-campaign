@@ -1,6 +1,6 @@
 import NavLogo from '../assets/dndampersand.png'
 
-function Nav () {
+const Nav = () => {
     return (
         <nav>
             <div className="nav__container">

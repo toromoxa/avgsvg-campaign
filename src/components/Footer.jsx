@@ -1,4 +1,4 @@
-function Footer () {
+const Footer = () => {
     return (
         <footer className="footer__container">
             <div className="footer__row">

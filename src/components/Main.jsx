@@ -39,7 +39,9 @@ const Main = () => {
                     <img src={Sword} alt="sword" className="toon__img sword" />
                   </figure>
                 </a>
-                <h2 className="toon__moniker">The Gifted Showman</h2>
+                <button className="toon__modal--btn click" onClick={openModal}>
+                    <h2 className="toon__moniker">The Muscial Mutilator</h2>
+                </button>
               </div>
               <div className="toon__tile">
                 <a href="" className="toon__link">
@@ -51,7 +53,9 @@ const Main = () => {
                     />
                   </figure>
                 </a>
-                <h2 className="toon__moniker">The Devious Dwarf</h2>
+                <button className="toon__modal--btn click" onClick={openModal}>
+                    <h2 className="toon__moniker">The Dungeon Dinger</h2>
+                </button>
               </div>
               <div className="toon__tile">
                 <a href="" className="toon__link">
@@ -63,9 +67,17 @@ const Main = () => {
                     />
                   </figure>
                 </a>
-                <h2 className="toon__moniker">The Bouyant Boomstick</h2>
+                <button className="toon__modal--btn click" onClick={openModal}>
+                    <h2 className="toon__moniker">The Bouyant Boomstick</h2>
+                </button>
               </div>
             </div>
+          </div>
+          <div className="journal__link--container">
+            <h2 className="journal__plug">Stay up to date with the <span className="savage">adventure</span></h2>
+            <a href="#Journal">
+                <button className="journal__btn click">View Journal</button>
+            </a>
           </div>
         </div>
         <div className="modal">
@@ -76,9 +88,7 @@ const Main = () => {
               <h5 className="character__race">Leonin</h5>
               <h3 className="character__class">Barbarian</h3>
               <p className="character__para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis necessitatibus quod quasi nesciunt sunt officia iure
-                consequatur! Illo praesentium doloribus officia sint delectus!
+              From a land far, far away a fearsome barbarian warrior seeks his soul and his salvation. What he lacks in worldly knowledge he more than makes up for with unflinching brutality, and the persistence of an indomitable will.
               </p>
               <button className="about--btn click" onClick={closeModal}>X</button>
             </div>

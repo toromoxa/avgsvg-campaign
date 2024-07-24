@@ -2,7 +2,7 @@ import Session1img from "../assets/icewind-dale-fullmap.jpg"
 import Session2img from "../assets/tavern-socialites.jpg"
 import entryBkg from "../assets/scroll-bkg.png"
 
-function Journal() {
+const Journal = () => {
   return (
     <section id="Journal">
       <h1 className="journal__title">The Average Savage's Adventure Journal</h1>
@@ -14,7 +14,7 @@ function Journal() {
               <div className="entry__text">
                 <h2 className="entry--title">Session 1, Date</h2>
                 <h3 className="entry--subtitle">
-                Arm-wrestling, music-making, flirtatious-murderers for hire!
+                Arriving in Icewind Dale, the community of Ten-Towns
                 </h3>
                 <div className="image__wrapper">
                   <figure className="wrapper">
@@ -35,7 +35,7 @@ function Journal() {
               <div className="entry__text">
                 <h2 className="entry--title">Session 2, Date</h2>
                 <h3 className="entry--subtitle">
-                  The Gang Commits Premeditated murder...for money.
+                  The Gang Commits Premeditated murder...for money!
                 </h3>
                 <div className="image__wrapper">
                   <figure className="wrapper">

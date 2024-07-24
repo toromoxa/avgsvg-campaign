@@ -1,17 +1,22 @@
 import './App.css';
 import Nav from './components/Nav';
 import Footer from './components/Footer'
-import Journal from './components/Journal';
+import Journal from './components/Journal'
 import Main from './components/Main';
+import Party from './components/Party'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <Main />
-      <Journal />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Nav />
+        <Main />
+        <Party />
+        <Journal />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
