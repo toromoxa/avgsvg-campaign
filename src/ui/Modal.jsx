@@ -1,4 +1,7 @@
-function Modal() {
+import toonData from "../data-toons";
+
+function Modal({ icon, closeModal }) {
+  console.log((toonData[0]).Alias)
   return (
     <div>
       <div className="modal">
@@ -13,13 +16,13 @@ function Modal() {
               Reiciendis necessitatibus quod quasi nesciunt sunt officia iure
               consequatur! Illo praesentium doloribus officia sint delectus!
             </p>
-            <button className="about--btn click">X</button>
+            <button className="about--btn click" onClick={closeModal}>X</button>
           </div>
         </div>
         <div className="modal__half modal__img">
           <div className="character__container">
             <figure className="character__avatar">
-              <img src={Heart} alt="" className="character__img" />
+              {icon}
             </figure>
           </div>
         </div>

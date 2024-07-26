@@ -1,11 +1,10 @@
 import React from 'react';
-import toonData from '../data-toons.jsx'
+import { toons } from '../data-toons.jsx'
 
 const Party = () => {
     return (
         <div>
-            <h1>Meet the Gang</h1>
-            <toonData data={toonData} />
+            <h1>The Gang</h1>
         </div>
     );
 }

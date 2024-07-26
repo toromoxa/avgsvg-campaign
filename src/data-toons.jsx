@@ -35,7 +35,7 @@ const toonData = [
   },
   {
     id: 4,
-    img: "./assets/giff-dnd-guntotting.jpg",
+    img: "./assets/funquisto-plain.jpg",
     Name: "Funquisto Thunderbuns",
     Alias: "The Bouyant Boomstick",
     Race: "Giff",

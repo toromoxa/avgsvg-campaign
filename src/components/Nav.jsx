@@ -11,9 +11,7 @@ const Nav = () => {
                                 <img src={NavLogo} className="nav--logo click" />
                             </a>
                         </figure>
-                        <div className="title__box">
-                            <h1></h1>
-                        </div>
+                        <button className='init__btn'>Let's Roll</button>
                         <ul className="nav__link--list">
                             <li className="list__item">
                                 <a href="" className="item__link click">Log In</a>
