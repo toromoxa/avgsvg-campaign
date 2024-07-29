@@ -97,13 +97,6 @@ nav {
     color: darkred;
 }
 
-.title__box {
-    font-family: "MedievalSharp", cursive;
-    color: white;
-    font-size: 18px;
-    visibility: hidden;
-}
-
 /* 
 
 Header
@@ -190,6 +183,42 @@ Header
     position: absolute;
     left: -25%;
     bottom: -90%;
+}
+
+.dice__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "MedievalSharp", cursive;
+    color: white;
+    font-size: 18px;
+}
+
+.init__btn {
+    width: 125px;
+    border: none;
+    background-color: transparent;
+}
+
+.init__btn:active {
+    animation: roll-animation 2000ms ease;
+}
+
+@keyframes roll-animation {
+    0% {rotate: 90deg;}
+    25% {rotate: 135deg;}
+    50% {rotate: 180deg;}
+    75% {rotate: 270deg;}
+    100% {rotate: 335deg;}
+}
+
+.dice__img {
+    width: calc( 100%);
+}
+
+.dice {
+    font-size: 96px;
 }
 
 /**
@@ -380,7 +409,7 @@ Main
     100% {rotate: -345deg;}
 }
 
-/* Modal */
+/* Character Modal */
 
 .modal {
     position: absolute;
@@ -412,7 +441,7 @@ Main
 
 .modal__half {
     width: 50%;
-    transition: all 300ms ease-in;
+    transition: all 300ms ease-in-out;
 }
 
 .modal__info {
@@ -484,6 +513,179 @@ Main
     height: 100%;
     transform: translate3d(-200px, -20px, 0);
 }
+
+/* 
+Login Modal
+
+*/
+
+.login__modal {
+    position: absolute;
+    background-image: url('./assets/cave_of_wonders__by_darkbrushbrony.jpg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1100px;
+    height: 60vh;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    z-index: -2;
+    visibility: hidden;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+
+.login__modal--open .login__modal {
+    visibility: visible;
+    box-shadow: 0 20 80 0 rgba(0, 0, 0, .55);
+    z-index: 100;
+    position: fixed;
+}
+
+.login__container {
+    margin: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login__row {
+    position: relative;
+    top: 70px;
+    width: 100%;
+    padding: 0px 18px;
+    font-size: 30px;
+    color: white;
+    font-family: "MedievalSharp", cursive;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid gold;
+    background-color: transparent;
+}
+
+input[type=email]:focus,
+input[type=password]:focus {
+    background-color: rgba(255, 215, 0, 0.50);
+}
+
+.form--email,
+.form--password,
+.form--submit {
+    width: 55%;
+    margin: 12px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+}
+
+.submit__btn {
+    margin-top: 48px;
+    width: 100%;
+    color: gold;
+    font-family: "MedievalSharp", cursive;
+    font-size: 24px;
+    background-color: transparent;
+}
+
+.exit--btn {
+    position: absolute;
+    left: 15px;
+    bottom: 12px;
+    background-color: transparent;
+    font-family: "MedievalSharp", cursive;
+    color: darkred;
+    border: none;
+    font-size: 30px;
+    font-weight: 700;
+    z-index: 101;
+}
+
+/* 
+
+Party Page 
+
+*/
+
+.party__landing {
+    background-color: rgb(143, 152, 157);
+    margin: none;
+    color: darkred;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "MedievalSharp", cursive;
+}
+
+.member__plaque {
+    margin: 12px 12px;
+    max-width: 640px;
+    max-height: 45vh;
+}
+
+.member__container {
+    width: 100%;
+    border-radius: 36px;
+    overflow: hidden;
+    border: 1px solid darkred;
+}
+
+.member__row {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.member__text--half {
+    width: 65%;
+    background-color: black;
+    text-align: right;
+}
+
+.member__text--container {
+    width: 100%;
+    margin: 12px 12px;
+}
+
+.member__blurb,
+.member__name,
+.member__alias,
+.member__race,
+.member__class,
+.fav__weapon {
+    margin: 16px;
+}
+
+.member__img--box {
+}
+
+.member__img--wrapper {
+    width: 100%;
+    margin: 0%;
+}
+
+.member--img {
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1.1);
+}
+
+
 
 /* 
 

@@ -1,6 +1,12 @@
-import NavLogo from '../assets/dndampersand.png'
+import NavLogo from '../assets/dndampersand.png';
+import React from 'react';
 
-const Nav = () => {
+const Nav = ({ openLoginModal }) => {
+    function openLoginModal() {
+        console.log("clicked openLogin");
+        document.body.classList += " login__modal--open";
+      }
+      
     return (
         <nav>
             <div className="nav__container">
@@ -11,10 +17,9 @@ const Nav = () => {
                                 <img src={NavLogo} className="nav--logo click" />
                             </a>
                         </figure>
-                        <button className='init__btn'>Let's Roll</button>
                         <ul className="nav__link--list">
                             <li className="list__item">
-                                <a href="" className="item__link click">Log In</a>
+                                <button className="item__link click" onClick={openLoginModal}>Log In</button>
                             </li>
                         </ul>
                     </div>

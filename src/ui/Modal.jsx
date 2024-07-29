@@ -1,7 +1,6 @@
 import toonData from "../data-toons";
 
 function Modal({ icon, closeModal }) {
-  console.log((toonData[0]).Alias)
   return (
     <div>
       <div className="modal">

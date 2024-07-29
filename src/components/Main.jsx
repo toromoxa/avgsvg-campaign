@@ -2,27 +2,38 @@ import Claws from "../assets/claws-transformed.png";
 import Sword from "../assets/knight-sword-transparent-image.png";
 import Hammer from "../assets/modac-hammer-coloured-1.png";
 import Pepperbox from "../assets/PEPPERBOX-BLUNT-SYMS-transformed.png";
-import Heart from "../assets/heart-toon-img.png"
-import {Link} from 'react-router-dom'
-import React, { useState, useEffect } from 'react'
+import Heart from "../assets/heart-toon-img.png";
+import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import Bottlecap from "../ui/Bottlecap";
 import toonData from "../data-toons";
 import Modal from "../ui/Modal";
 import Header from "../ui/Header";
+import Login from "../ui/Login";
 
 const Main = () => {
-    function openModal() {
-        document.body.classList += " modal--open"
-    }
+  function openModal() {
+    console.log('clicked open modal')
+    document.body.classList += " modal--open";
+  }
 
-    function closeModal() {
-        document.body.classList.remove("modal--open")
-    }
+  function closeModal() {
+    console.log('clicked close modal')
+    document.body.classList.remove("modal--open");
+  }
+
+  function closeLoginModal() {
+    console.log("clicked closelogin");
+    document.body.classList.remove("login__modal--open");
+  }
 
   return (
     <main id="landing">
       <div className="landing__container">
         <div className="landing__row">
+          <Login
+            closeLoginModal={closeLoginModal}
+          />
           <Header />
           <div className="toon__tile--container">
             <div className="toon__tile--wrapper">
@@ -50,7 +61,7 @@ const Main = () => {
           </div>
           <div className="pages__link--container">
             <h2 className="pages__plug">
-              Stay up to date with the <span className="savage">adventure</span>
+              <span className="savage">Stay up to date with the adventure</span>
             </h2>
             <div className="btn__box">
               <Link to="journal">
@@ -62,12 +73,13 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <Modal 
-        closeModal={closeModal}
-        icon={<img src={Heart} alt="" className="character__img" />} />
+        <Modal
+          closeModal={closeModal}
+          icon={<img src={Heart} alt="" className="character__img" />}
+        />
       </div>
     </main>
   );
-}
+};
 
 export default Main;

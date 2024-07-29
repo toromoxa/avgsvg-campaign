@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="footer__row">
                 <ul className="footer__link--list">
                     <li className="list__item">
-                        <a href="/contact" className="item__link footer--link click">Login</a>
+                        <a href="/" className="item__link footer--link click">Login</a>
                     </li>
                 </ul>
             </div>

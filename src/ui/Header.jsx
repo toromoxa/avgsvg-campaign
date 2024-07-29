@@ -1,10 +1,23 @@
-import Funquisto from '../assets/funquisto-plain.jpg'
-import Modac from '../assets/modac-plain.jpg'
-import Heart from '../assets/heart-toon-img.png'
-import Lyethar from '../assets/Lyethar-plain.jpg'
+import Funquisto from '../assets/funquisto-plain.jpg';
+import Modac from '../assets/modac-plain.jpg';
+import Heart from '../assets/heart-toon-img.png';
+import Lyethar from '../assets/Lyethar-plain.jpg';
 import { Link } from 'react-router-dom';
+import Dice from '../assets/d20-dice-no-background.png';
+import React, { useState } from 'react'
 
 function Header() {
+
+  const [num, setNum] = useState(0);
+
+    function randomNumberInRange(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    const handleClick = () => {
+        setNum(randomNumberInRange(1, 20));
+    }
+
   return (
     <header>
       <div className="head__container">
@@ -15,28 +28,38 @@ function Header() {
               <span className="savage">savages.</span>
             </h1>
             <div className="header__img--container">
-              <Link to='party'>
+              <Link to="party">
                 <div className="header__smoltoon">
-                  <img src={Funquisto} className="header__img header--funquisto" />
+                  <img
+                    src={Funquisto}
+                    className="header__img header--funquisto"
+                  />
                 </div>
               </Link>
-              <Link to='party'>
+              <Link to="party">
                 <div className="header__smoltoon">
                   <img src={Lyethar} className="header__img header--lyethar" />
                 </div>
               </Link>
-              <Link to='party'>
+              <Link to="party">
                 <div className="header__smoltoon">
                   <img src={Heart} className="header__img header--heart" />
                 </div>
               </Link>
-              <Link to='party'>
+              <Link to="party">
                 <div className="header__smoltoon">
                   <img src={Modac} className="header__img header--modac" />
                 </div>
               </Link>
             </div>
-            <h4 className="header__outro">being savage ain't average</h4>
+            <div className='dice__box'>
+              <h1 className="dice__box--title">Let's Roll</h1>
+              <button onClick={handleClick} className="init__btn click">
+                <img className="dice__img" src={Dice} alt="" />
+              </button>
+              <h1 className="drumroll__roll">Your initiative is:</h1>
+              <div className="roll__result"><span className='savage dice'>{num}</span></div>
+            </div>
           </div>
         </div>
       </div>
