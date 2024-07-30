@@ -77,6 +77,18 @@ const Main = () => {
           closeModal={closeModal}
           icon={<img src={Heart} alt="" className="character__img" />}
         />
+        <Modal
+          closeModal={closeModal}
+          icon={<img src={Heart} alt="" className="character__img" />}
+        />
+        <Modal
+          closeModal={closeModal}
+          icon={<img src={Heart} alt="" className="character__img" />}
+        />
+        <Modal
+          closeModal={closeModal}
+          icon={<img src={Heart} alt="" className="character__img" />}
+        />
       </div>
     </main>
   );

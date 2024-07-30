@@ -1,22 +1,27 @@
-function Entry () {
+import Session1img from "../assets/icewind-dale-fullmap.jpg"
+import entryBkg from "../assets/scroll-bkg.png"
+
+function Entry ({ entry = {} }) {
     return (
         <div className="entry__container">
             <div className="entry__text--background">
-              <img src={entryBkg} alt="" className="stretch" />
+              <img src={entryBkg} className="stretch" />
               <div className="entry__text">
-                <h2 className="entry--title">Session 1, Date</h2>
-                <h3 className="entry--subtitle">
-                Arm-wrestling, music-making, flirtatious-murderers for hire!
-                </h3>
+                <h2 className="entry--title">Session {entry.id}, {entry.date}</h2>
+                <div className="location__box">
+                  <div className="location__start">Start Point:{entry.startPoint}</div>
+                  <div className="location__end">End Point: {entry.endPoint} </div>
+                </div>
                 <div className="image__wrapper">
                   <figure className="wrapper">
-                    <img src={Session1img} alt="" className="journal--img" />
+                    <img src={entry.url} className="journal--img" />
                   </figure>
                 </div>
+                <h3 className="entry--subtitle">
+                {entry.title}
+                </h3>
                 <p className="entry--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  nam explicabo pariatur labore architecto accusamus at nisi
-                  neque! Autem, ex?
+                  {entry.summary}
                 </p>
               </div>
             </div>

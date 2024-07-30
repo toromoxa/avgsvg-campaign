@@ -11,9 +11,7 @@ function Modal({ icon, closeModal }) {
             <h5 className="character__race">Leonin</h5>
             <h3 className="character__class">Barbarian</h3>
             <p className="character__para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis necessitatibus quod quasi nesciunt sunt officia iure
-              consequatur! Illo praesentium doloribus officia sint delectus!
+              FOR SHRUBBY!
             </p>
             <button className="about--btn click" onClick={closeModal}>X</button>
           </div>

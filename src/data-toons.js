@@ -2,7 +2,7 @@
 export const toonData = [
   {
     id: 1,
-    img: './assets/heart-toon-img.jpg',
+    img: require ('./assets/heart-toon-img.jpg'),
     name: "Heart",
     alias: "Murder Floof",
     race: "Leonin",
@@ -13,7 +13,7 @@ export const toonData = [
   },
   {
     id: 2,
-    img: "./assets/Lyethar-plain.jpg",
+    img: require("./assets/Lyethar-plain.jpg"),
     name: "Lyethar",
     alias: "The Musical Mutitlator",
     race: "Half-Elf",
@@ -24,7 +24,7 @@ export const toonData = [
   },
   {
     id: 3,
-    img: "./assets/modac-plain.jpg",
+    img: require("./assets/modac-plain.jpg"),
     name: "Modac Ashen-Beard",
     alias: "The Dungeon Dinger",
     race: "Hill Dwarf",
@@ -35,7 +35,7 @@ export const toonData = [
   },
   {
     id: 4,
-    img: "./assets/funquisto-plain.jpg",
+    img: require("./assets/funquisto-plain.jpg"),
     name: "Funquisto Thunderbuns",
     alias: "The Bouyant Boomstick",
     race: "Giff",
