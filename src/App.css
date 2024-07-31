@@ -162,7 +162,7 @@ Header
 .header--heart {
     width: 360px;
     position: absolute;
-    left: -80%;
+    left: -100%;
 }
 
 .header--lyethar {
@@ -657,6 +657,10 @@ Party Page
     text-align: right;
 }
 
+.member__img--half {
+    width: 35%;
+}
+
 .member__text--container {
     width: 100%;
     margin: 12px 12px;
@@ -675,14 +679,27 @@ Party Page
     margin: 16px;
 }
 
+.member__name {
+    font-size: 36px;
+    background: radial-gradient(circle, rgb(13, 51, 138), rgb(86, 173, 228));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .member__blurb {
     width: 80%;
     margin-left: 60px;
     margin-right: 0px;
+    background: radial-gradient(circle, rgb(251, 246, 188), rgb(248, 204, 7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .member__img--wrapper {
     width: 100%;
+    height: 100%;
     margin: 0%;
     transform: translateY(15%);
 }
@@ -870,8 +887,117 @@ footer {
 
 /* responsive changes */
 
-@media (max-width: 550px) {
+@media (max-width: 678px) {
+    /* home page */
+    .body {
+        width: 100%;
+    }
+    
     .secondary {
         display: none;
+    }
+
+    .header__img--container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* modal */
+
+    .modal {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 75%;
+        height: 50%;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .modal__about {
+        height: 50%;
+        width: 100%;
+        align-items: center;
+    }
+    .modal__img {
+        height: 50%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .modal__character--img {
+        width: 100%;
+        transform: scale(1.5);
+        position: absolute;
+        top: 50px;
+    }
+
+    .character__container,
+    .character__avatar {
+        height: 100%;
+        position: relative;
+    }
+
+    .character__name {
+        font-size: 24px;
+    }
+
+    /* party page */
+
+    #Funquisto, 
+    #Lyethar,
+    #Heart,
+    #Modac {
+        height: 100vh;
+        padding: 8px;
+        margin: 16px;
+    }
+
+    .member__plaque {
+        margin: 0px;
+    }
+    .member__row {
+        flex-direction: column-reverse;
+    }
+    .member__text--half {
+        width: 100%;
+        height: 80%;
+        text-align: center;
+    }
+    .member__img--half {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .member__img--wrapper {
+        height: 100%;
+    }
+
+    .member--img {
+        /* max-height: 400px; */
+        width: 100%;
+    }
+    .member__text--container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+    }
+    .member__blurb {
+        margin: 16px 16px;
+        width: inherit;
     }
 }

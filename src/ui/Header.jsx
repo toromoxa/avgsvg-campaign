@@ -1,6 +1,6 @@
 import Funquisto from '../assets/funquisto-plain.jpg';
 import Modac from '../assets/modac-plain.jpg';
-import Heart from '../assets/heart-toon-img.png';
+import Heart from '../assets/heart-plain.jpg';
 import Lyethar from '../assets/Lyethar-plain.jpg';
 import { Link } from 'react-router-dom';
 import Dice from '../assets/d20-dice-no-background.png';

@@ -2,18 +2,17 @@ import Claws from "../assets/claws-transformed.png";
 import Sword from "../assets/knight-sword-transparent-image.png";
 import Hammer from "../assets/modac-hammer-coloured-1.png";
 import Pepperbox from "../assets/PEPPERBOX-BLUNT-SYMS-transformed.png";
-import Heart from "../assets/heart-toon-img.png";
 import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Bottlecap from "../ui/Bottlecap";
-import toonData from "../data-toons";
-import Modal from "../ui/Modal";
 import Header from "../ui/Header";
 import Login from "../ui/Login";
+import { toonData } from "../data-toons";
+import Modal from "../ui/Modal";
 
 const Main = () => {
   function openModal() {
-    console.log('clicked open modal')
+    console.log('clicked open modal--open')
     document.body.classList += " modal--open";
   }
 
@@ -73,22 +72,16 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <Modal
-          closeModal={closeModal}
-          icon={<img src={Heart} alt="" className="character__img" />}
-        />
-        <Modal
-          closeModal={closeModal}
-          icon={<img src={Heart} alt="" className="character__img" />}
-        />
-        <Modal
-          closeModal={closeModal}
-          icon={<img src={Heart} alt="" className="character__img" />}
-        />
-        <Modal
-          closeModal={closeModal}
-          icon={<img src={Heart} alt="" className="character__img" />}
-        />
+        {
+          toonData
+          .filter((data) => data.id ==1)
+          .map((data) => (
+            <Modal
+            data={data}
+            key={data.id}
+            closeModal={closeModal}
+            />
+          ))}
       </div>
     </main>
   );
