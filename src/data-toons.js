@@ -19,7 +19,7 @@ export const toonData = [
     race: "Half-Elf",
     class: "Gladiator",
     weapon: "Two-Handed Sword",
-    blurb: "From the roiling fighting pits of some gods-cursed human civilization comes a pit-fighter who is more than he seems. Possessing musical talents as well as magical abilities, he stands as a power ally or a potentially deadly foe.",
+    blurb: "From the roiling fighting pits of some gods-cursed human civilization comes a pit-fighter who is more than he seems. Possessing musical talents as well as magical abilities, he stands as both a powerful ally and a potentially deadly foe.",
     secret: 'unknown'
   },
   {
@@ -41,7 +41,7 @@ export const toonData = [
     race: "Giff",
     class: "Gunslinger",
     weapon: "Pepperbox",
-    blurb: "From across the ocean a lone gunlsinger arrives in the frozen tundra as a pariah to his own people. As a desperate outcast, he seeks a artifact to save his people and secure his redemption, no matter the cost.",
+    blurb: "From across the ocean a lone gunslinger arrives in the frozen tundra, a pariah to his own people. As a desperate outcast, he seeks a artifact to save his people and secure his redemption, no matter the cost.",
     secret: 'The Pirate Cannibal'
   },
 ];
