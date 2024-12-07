@@ -124,7 +124,7 @@ export const journalEntries = [
     id: 13,
     date: "July 18",
     title: "The Gang Returns to Tourmalaine",
-    summary: "Intrigue abounds! We got Orus to devulge more useful information about the Ten Towns politics and the issue he has been having with the local Militia leader. Miners are still disappearing, making us look bad. Modac hung back with his massuese (bad-ankle/foot massage my ass! We all know he gave her the Dwarf D) Funquisto, Heart, and Lyethar encounter a Grell while double-checking the mine and kill it good. ",
+    summary: "Intrigue abounds! We got Orus to devulge more useful information about the Ten Towns politics and the issue he has been having with the local Militia leader. Miners are still disappearing, making us look bad. Modac hung back with his massuese. Funquisto, Heart, and Lyethar encounter a Grell while double-checking the mine and kill it good.",
     url: require("./assets/the_grell.jpg"),
     startPoint: "Lonely Wood",
     endPoint: "The Mine",
@@ -136,6 +136,26 @@ export const journalEntries = [
     title: "Whelp, Moes dead. Or may as well be.",
     summary: "Moe is stupid again sans a pouch of herbs. We confront the militia captian of Tourmalaine and Targos in colusion together trying to intimidate Orus. Showed them the Grell corpse and were offered more work with a monster in Targos, but Orus did not want us to leave with that dude. Our insight says he has ill intent. Also, the local Tourmalaine militia leader is a biggity-biggity-bitch!",
     url: require("./assets/wwe_suck-it.jpg"),
+    startPoint: "The Mine",
+    endPoint: "Tourmalaine",
+    lootFound: ['target lantern', 'grell beak']
+  },
+  {
+    id: 15,
+    date: "August 1",
+    title: "The Halfling hath no limits.",
+    summary: "The group forgoes the town of Targos, and heads onward to Bremen to see about a lake monster. Whilst crossing treacherous icy waters, Modac slips and breaks his shit. Lyethar stays behind with him as Heart and Funquisto forge onward. Heart is known in the town of Bremen as he and Funquisto set about getting information, they encounter a strange halfling in the tavern. Also, Shrubby knows the lake monster, named Ted.",
+    url: '',
+    startPoint: "The Mine",
+    endPoint: "Tourmalaine",
+    lootFound: ['target lantern', 'grell beak']
+  },
+  {
+    id: 16,
+    date: "August 8",
+    title: "",
+    summary: "",
+    url: '',
     startPoint: "The Mine",
     endPoint: "Tourmalaine",
     lootFound: ['target lantern', 'grell beak']

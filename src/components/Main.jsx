@@ -1,41 +1,28 @@
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Bottlecap from "../ui/Bottlecap";
+import Header from "../ui/Header";
+import Login from "../ui/Login";
 import Claws from "../assets/claws-transformed.png";
 import Sword from "../assets/knight-sword-transparent-image.png";
 import Hammer from "../assets/modac-hammer-coloured-1.png";
 import Pepperbox from "../assets/PEPPERBOX-BLUNT-SYMS-transformed.png";
-import { Link } from "react-router-dom";
-import React from "react";
-import Bottlecap from "../ui/Bottlecap";
-import Header from "../ui/Header";
-import Login from "../ui/Login";
-import { toonData } from "../data-toons";
-import Modal from "../ui/Modal";
 
-const Main = () => {
-  function openModal() {
-    console.log('clicked open modal--open')
-    document.body.classList += " modal--open";
-  }
+const Main = ({ openLoginModal, closeLoginModal }) => {
 
-  function closeModal() {
-    console.log('clicked close modal')
-    document.body.classList.remove("modal--open");
-  }
-
-  function closeLoginModal() {
-    console.log("clicked closelogin");
-    document.body.classList.remove("login__modal--open");
-  }
+  // function openModal() {
+  //   console.log("clicked open modal--open");
+  //   document.body.classList += " modal--open";
+  // }
 
   return (
     <main id="landing">
       <div className="landing__container">
         <div className="landing__row">
-          <Login
-            closeLoginModal={closeLoginModal}
-          />
+          <Login closeLoginModal={closeLoginModal} />
           <Header />
           <div className="toon__tile--container">
-            <div className="toon__tile--wrapper">
+            {/* <div className="toon__tile--wrapper">
               <Bottlecap
                 openModal={openModal}
                 icon={<img src={Claws} className="toon__img claw" />}
@@ -56,7 +43,7 @@ const Main = () => {
                 icon={<img src={Pepperbox} className="toon__img pepperbox" />}
                 alias={<h2 className="toon__moniker">The Bouyant Boomstick</h2>}
               />
-            </div>
+            </div> */}
           </div>
           <div className="pages__link--container">
             <h2 className="pages__plug">
@@ -72,16 +59,6 @@ const Main = () => {
             </div>
           </div>
         </div>
-        {
-          toonData
-          .filter((data) => data.id ==1)
-          .map((data) => (
-            <Modal
-            data={data}
-            key={data.id}
-            closeModal={closeModal}
-            />
-          ))}
       </div>
     </main>
   );

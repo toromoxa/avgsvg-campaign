@@ -2,6 +2,7 @@ import Funquisto from '../assets/funquisto-plain.jpg';
 import Modac from '../assets/modac-plain.jpg';
 import Heart from '../assets/heart-plain.jpg';
 import Lyethar from '../assets/Lyethar-plain.jpg';
+import Harry from '../assets/harry-pfp.jpg';
 import { Link } from 'react-router-dom';
 import Dice from '../assets/d20-dice-no-background.png';
 import React, { useState } from 'react'
@@ -49,6 +50,11 @@ function Header() {
               <Link to="party">
                 <div className="header__smoltoon">
                   <img src={Modac} className="header__img header--modac" />
+                </div>
+              </Link>
+              <Link to="party">
+                <div className="header__smoltoon">
+                  <img src={Harry} className="header__img header--harry" />
                 </div>
               </Link>
             </div>

@@ -10,7 +10,7 @@ const Party = () => {
       <section id="Funquisto">
           {
               toonData
-              .filter((data) => data.id ==4)
+              .filter((data) => data.id == 5)
               .map((data) => (
                   <Member data={data} key={data.id}/>
           ))}
@@ -18,7 +18,7 @@ const Party = () => {
       <section id="Lyethar">
           {
                 toonData
-                .filter((data) => data.id ==2)
+                .filter((data) => data.id == 3)
                 .map((data) => (
                     <Member data={data} key={data.id}/>
             ))}
@@ -26,7 +26,7 @@ const Party = () => {
       <section id="Heart">
           {
                 toonData
-                .filter((data) => data.id ==1)
+                .filter((data) => data.id == 2)
                 .map((data) => (
                     <Member data={data} key={data.id}/>
             ))}
@@ -34,7 +34,15 @@ const Party = () => {
       <section id="Modac">
           {
                 toonData
-                .filter((data) => data.id ==3)
+                .filter((data) => data.id == 4)
+                .map((data) => (
+                    <Member data={data} key={data.id}/>
+            ))}
+      </section>
+      <section id="Harry__Baggins">
+          {
+                toonData
+                .filter((data) => data.id == 1)
                 .map((data) => (
                     <Member data={data} key={data.id}/>
             ))}

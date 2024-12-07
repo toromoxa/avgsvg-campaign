@@ -39,6 +39,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-right: 32px;
 }
 
 .list__item {
@@ -183,6 +184,12 @@ Header
     position: absolute;
     left: -25%;
     bottom: -90%;
+}
+
+.header--harry {
+    width: 200px;
+    position: absolute;
+    
 }
 
 .dice__box {
@@ -383,11 +390,11 @@ Main
 
 @keyframes hammer-animation {
     0% {transform: scale(1.2); border-radius: 9999px;}
-    20% {rotate: -45deg; transform: scale(1.4); border-radius: 9999px; border-left: 4px solid yellow;}
+    20% {rotate: -45deg; transform: scale(1.4); border-radius: 9999px; border-left: 4px solid purple;}
     30% {rotate: 40deg; transform: scale(1.2); border-left: white;}
-    40% {rotate: -45deg; transform: scale(2.0); border-radius: 9999px; border-left: 6px solid yellow;}
+    40% {rotate: -45deg; transform: scale(2.0); border-radius: 9999px; border-left: 6px solid purple;}
     50% {rotate: 40deg; transform: scale(1.2); border-left: white;}
-    60% {rotate: -45deg; transform: scale(2.5); border-radius: 9999px; border-left: 6px solid yellow;}
+    60% {rotate: -45deg; transform: scale(2.5); border-radius: 9999px; border-left: 6px solid purple;}
     70% {rotate: 40deg; transform: scale(1.2); border-left: white;}
     80% {rotate: -45deg; transform: scale(3.0); border-radius: 9999px; border-left: 8px solid red}
 }
@@ -514,23 +521,24 @@ Main
     transform: translate3d(-200px, -20px, 0);
 }
 
-/* 
+/*
+
 Login Modal
 
 */
 
 .login__modal {
     position: absolute;
-    background-image: url('./assets/cave_of_wonders__by_darkbrushbrony.jpg');
+    /* background-image: url('./assets/cave_of_wonders__by_darkbrushbrony.jpg'); */
+    background-color: gray;
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
-    width: 85%;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 1100px;
-    height: 60vh;
     border-radius: 24px;
     overflow: hidden;
     display: flex;
@@ -550,18 +558,21 @@ Login Modal
     margin: 8px;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
 }
 
 .login__row {
     position: relative;
-    top: 70px;
     width: 100%;
-    padding: 0px 18px;
     font-size: 30px;
     color: white;
     font-family: "MedievalSharp", cursive;
+}
+
+.login__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
 }
 
 .login__form {
@@ -585,15 +596,36 @@ input[type=password]:focus {
 .form--email,
 .form--password,
 .form--submit {
-    width: 55%;
-    margin: 12px 0px;
+    width: 50%;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;   
 }
 
+.login__check {
+    color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.toggle--login {
+    background: transparent;
+    margin-left: 12px;
+    border-radius: 36px;
+}
+
+.error__message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
 .submit__btn {
-    margin-top: 48px;
+    margin-top: 8px;
+    margin-bottom: 24px;
     width: 100%;
     color: gold;
     font-family: "MedievalSharp", cursive;
@@ -603,14 +635,14 @@ input[type=password]:focus {
 
 .exit--btn {
     position: absolute;
-    left: 15px;
-    bottom: 12px;
+    right: 25px;
+    top: 15px;
     background-color: transparent;
     font-family: "MedievalSharp", cursive;
-    color: darkred;
+    color: gold;
     border: none;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 42px;
+    font-weight: 900;
     z-index: 101;
 }
 
@@ -685,6 +717,9 @@ Party Page
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    display: flex;
+    flex: wrap;
+    justify-content: end;
 }
 
 .member__blurb {
@@ -959,31 +994,37 @@ footer {
     #Funquisto, 
     #Lyethar,
     #Heart,
-    #Modac {
+    #Modac,
+    #Harry__Baggins {
         height: 100vh;
         padding: 8px;
         margin: 16px;
+        width: 100vw;
     }
 
     .member__plaque {
-        margin: 0px;
+        margin: 0 auto;
+        width: 100%;
     }
     .member__row {
         flex-direction: column-reverse;
+        display: flex;
+        width: 100%;
     }
     .member__text--half {
-        width: 100%;
+        width: 50%;
         height: 80%;
         text-align: center;
     }
     .member__img--half {
-        width: 100%;
+        width: 50%;
         overflow: hidden;
         text-align: center;
     }
 
     .member__img--wrapper {
         height: 100%;
+        width: 100%;
     }
 
     .member--img {
@@ -991,6 +1032,7 @@ footer {
         width: 100%;
     }
     .member__text--container {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;

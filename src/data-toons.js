@@ -48,4 +48,16 @@ export const toonData = [
     blurb: "From across the ocean a lone gunslinger arrives in the frozen tundra, a pariah to his own people. As a desperate outcast, he seeks a artifact to save his people and secure his redemption, no matter the cost.",
     secret: 'The Pirate Cannibal'
   },
+  {
+    id: 5,
+    img: require("./assets/harry-pfp.jpg"),
+    name: "Harry Baggins",
+    alias: "Snot Shot",
+    race: "Halfling",
+    job: "Wizard",
+    weapon: "Magic",
+    taunt: "I can do that! I'm great!",
+    blurb: "On the run from seemingly everyone, is he a wizard by trade or a thief who knows some of magic? He seems to have a compulsive attraction to danger and mischief, making him a great fit with the Gang. He joined out of a need for money, but has stayed, whether its the easy coin or some other purpose only he knows.",
+    secret: 'Sneaky Little Hobbitssss'
+  },
 ];
